@@ -1,9 +1,7 @@
 package com.example.pethotelapp.mapper;
 
 import com.example.pethotelapp.dto.AnimalDto;
-import com.example.pethotelapp.dto.OwnerDto;
 import com.example.pethotelapp.model.AnimalModel;
-import com.example.pethotelapp.model.OwnerModel;
 
 public class AnimalMapper {
     public static AnimalDto toAnimalDto(AnimalModel animalModel) {

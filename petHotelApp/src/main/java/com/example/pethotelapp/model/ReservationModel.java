@@ -32,8 +32,8 @@ public class ReservationModel {
     private ReservationStatus reservationStatus;
 
     @ManyToOne
-    @JoinColumn(name = "owner_id") // wiele leczen do jednego zwierzecia, JoinColumn, klucz obcy id zwierzecia
-    private OwnerModel owner;
+    @JoinColumn(name = "user_id") // wiele leczen do jednego zwierzecia, JoinColumn, klucz obcy id zwierzecia
+    private UserModel user;
 
     @ManyToMany
     @JoinTable(

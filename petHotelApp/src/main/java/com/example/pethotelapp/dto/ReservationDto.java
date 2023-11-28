@@ -1,8 +1,8 @@
 package com.example.pethotelapp.dto;
 
 import com.example.pethotelapp.enumType.ReservationStatus;
-import com.example.pethotelapp.model.OwnerModel;
 
+import com.example.pethotelapp.model.UserModel;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -24,7 +24,7 @@ public class ReservationDto {
 
     private ReservationStatus reservationStatus;
 
-    private Long ownerId;
+    private UserModel user;
 
     private Set<Long> roomIds;
 
