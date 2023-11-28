@@ -28,7 +28,7 @@ public class AnimalModel {
     private Sex sex;
 
     @ManyToOne
-    private OwnerModel owner;
+    private UserModel user;
 
     @OneToMany(mappedBy = "animal", cascade = CascadeType.ALL)
     private Set<TreatmentModel> treatments;
